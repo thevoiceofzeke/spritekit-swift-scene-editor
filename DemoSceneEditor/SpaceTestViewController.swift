@@ -1,5 +1,5 @@
 //
-//  GameViewController.swift
+//  SpaceTestViewController.swift
 //  DemoSceneEditor
 //
 //  Created by David Witter on 3/2/15.
@@ -10,13 +10,13 @@ import UIKit
 import SpriteKit
 
 extension SKNode {
-    class func unarchiveFromFile(file : NSString) -> SKNode? {
+    class func unarchiveSpaceTestFromFile(file : NSString) -> SKNode? {
         if let path = NSBundle.mainBundle().pathForResource(file, ofType: "sks") {
             var sceneData = NSData(contentsOfFile: path, options: .DataReadingMappedIfSafe, error: nil)!
             var archiver = NSKeyedUnarchiver(forReadingWithData: sceneData)
             
             archiver.setClass(self.classForKeyedUnarchiver(), forClassName: "SKScene")
-            let scene = archiver.decodeObjectForKey(NSKeyedArchiveRootObjectKey) as GameScene
+            let scene = archiver.decodeObjectForKey(NSKeyedArchiveRootObjectKey) as SpaceTest
             archiver.finishDecoding()
             return scene
         } else {
@@ -24,11 +24,12 @@ extension SKNode {
         }
     }
 }
-class GameViewController: UIViewController {
+
+class SpaceTestViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let scene = GameScene.unarchiveFromFile("GameScene") as? GameScene {
+        if let scene = SpaceTest.unarchiveSpaceTestFromFile("SpaceTest") as? SpaceTest {
             // Configure the view.
             let skView = self.view as SKView
             skView.showsFPS = true
@@ -42,28 +43,24 @@ class GameViewController: UIViewController {
             
             skView.presentScene(scene)
         }
+
         // Do any additional setup after loading the view.
     }
 
-
-    override func shouldAutorotate() -> Bool {
-        return true
-    }
-
-//    override func supportedInterfaceOrientations() -> Int {
-//        if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
-//            return Int(UIInterfaceOrientationMask.AllButUpsideDown.rawValue)
-//        } else {
-//            return Int(UIInterfaceOrientationMask.All.rawValue)
-//        }
-//    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Release any cached data, images, etc that aren't in use.
+        // Dispose of any resources that can be recreated.
     }
+    
 
-    override func prefersStatusBarHidden() -> Bool {
-        return true
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
     }
+    */
+
 }

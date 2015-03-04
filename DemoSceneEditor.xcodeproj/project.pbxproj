@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		780C9E8B1AA54ACE00455668 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 780C9E7F1AA54ACE00455668 /* arrow.png */; };
+		780C9E8C1AA54ACE00455668 /* astronaut.png in Resources */ = {isa = PBXBuildFile; fileRef = 780C9E801AA54ACE00455668 /* astronaut.png */; };
+		780C9E8D1AA54ACE00455668 /* astronaut1.png in Resources */ = {isa = PBXBuildFile; fileRef = 780C9E811AA54ACE00455668 /* astronaut1.png */; };
+		780C9E8E1AA54ACE00455668 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 780C9E821AA54ACE00455668 /* background.jpg */; };
+		780C9E8F1AA54ACE00455668 /* linearField.png in Resources */ = {isa = PBXBuildFile; fileRef = 780C9E831AA54ACE00455668 /* linearField.png */; };
+		780C9E901AA54ACE00455668 /* minus.png in Resources */ = {isa = PBXBuildFile; fileRef = 780C9E841AA54ACE00455668 /* minus.png */; };
+		780C9E911AA54ACE00455668 /* planet.png in Resources */ = {isa = PBXBuildFile; fileRef = 780C9E851AA54ACE00455668 /* planet.png */; };
+		780C9E921AA54ACE00455668 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 780C9E861AA54ACE00455668 /* plus.png */; };
+		780C9E931AA54ACE00455668 /* radialField.png in Resources */ = {isa = PBXBuildFile; fileRef = 780C9E871AA54ACE00455668 /* radialField.png */; };
+		780C9E941AA54ACE00455668 /* space.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 780C9E881AA54ACE00455668 /* space.jpg */; };
+		780C9E951AA54ACE00455668 /* springField.png in Resources */ = {isa = PBXBuildFile; fileRef = 780C9E891AA54ACE00455668 /* springField.png */; };
+		780C9E961AA54ACE00455668 /* vortex.png in Resources */ = {isa = PBXBuildFile; fileRef = 780C9E8A1AA54ACE00455668 /* vortex.png */; };
+		780C9E991AA5516F00455668 /* BoosterParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 780C9E971AA5516F00455668 /* BoosterParticle.sks */; };
+		780C9E9A1AA5516F00455668 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 780C9E981AA5516F00455668 /* spark.png */; };
+		780C9E9C1AA5529400455668 /* moon.png in Resources */ = {isa = PBXBuildFile; fileRef = 780C9E9B1AA5529400455668 /* moon.png */; };
+		782B3A2D1AA62E170093ACA6 /* MyScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 782B3A2C1AA62E170093ACA6 /* MyScene.sks */; };
 		7830A2F51AA50BDA00175166 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7830A2F41AA50BDA00175166 /* AppDelegate.swift */; };
 		7830A2F71AA50BDA00175166 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7830A2F61AA50BDA00175166 /* GameScene.sks */; };
 		7830A2F91AA50BDA00175166 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7830A2F81AA50BDA00175166 /* GameScene.swift */; };
@@ -15,6 +31,18 @@
 		7830A3001AA50BDB00175166 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7830A2FF1AA50BDB00175166 /* Images.xcassets */; };
 		7830A3031AA50BDB00175166 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7830A3011AA50BDB00175166 /* LaunchScreen.xib */; };
 		7830A30F1AA50BDB00175166 /* DemoSceneEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7830A30E1AA50BDB00175166 /* DemoSceneEditorTests.swift */; };
+		7830A31F1AA51C1800175166 /* Fields.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7830A31E1AA51C1800175166 /* Fields.sks */; };
+		7830A3211AA51C4800175166 /* Fields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7830A3201AA51C4800175166 /* Fields.swift */; };
+		7830A3271AA5206900175166 /* FieldsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7830A3261AA5206900175166 /* FieldsViewController.swift */; };
+		7853014E1AA55D3A00902685 /* SpaceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7853014D1AA55D3A00902685 /* SpaceTest.swift */; };
+		785301501AA55D7D00902685 /* SpaceTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7853014F1AA55D7D00902685 /* SpaceTestViewController.swift */; };
+		785301521AA55DC200902685 /* SpaceTest.sks in Resources */ = {isa = PBXBuildFile; fileRef = 785301511AA55DC200902685 /* SpaceTest.sks */; };
+		78789DF31AA6857C00D3A90D /* fdsafd.sks in Resources */ = {isa = PBXBuildFile; fileRef = 78789DF21AA6857C00D3A90D /* fdsafd.sks */; };
+		78789DF51AA689DC00D3A90D /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 78789DF41AA689DC00D3A90D /* MyParticle.sks */; };
+		7879B2ED1AA56B9F007EB5CD /* forceFieldsButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7879B2EA1AA56B9F007EB5CD /* forceFieldsButton.png */; };
+		7879B2EE1AA56B9F007EB5CD /* gravityFieldsButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7879B2EB1AA56B9F007EB5CD /* gravityFieldsButton.png */; };
+		7879B2EF1AA56B9F007EB5CD /* moonBounceButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7879B2EC1AA56B9F007EB5CD /* moonBounceButton.png */; };
+		78DE29CE1AA65462000822C3 /* collection.png in Resources */ = {isa = PBXBuildFile; fileRef = 78DE29CD1AA65462000822C3 /* collection.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +56,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		780C9E7F1AA54ACE00455668 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		780C9E801AA54ACE00455668 /* astronaut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = astronaut.png; sourceTree = "<group>"; };
+		780C9E811AA54ACE00455668 /* astronaut1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = astronaut1.png; sourceTree = "<group>"; };
+		780C9E821AA54ACE00455668 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		780C9E831AA54ACE00455668 /* linearField.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linearField.png; sourceTree = "<group>"; };
+		780C9E841AA54ACE00455668 /* minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus.png; sourceTree = "<group>"; };
+		780C9E851AA54ACE00455668 /* planet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = planet.png; sourceTree = "<group>"; };
+		780C9E861AA54ACE00455668 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		780C9E871AA54ACE00455668 /* radialField.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radialField.png; sourceTree = "<group>"; };
+		780C9E881AA54ACE00455668 /* space.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = space.jpg; sourceTree = "<group>"; };
+		780C9E891AA54ACE00455668 /* springField.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = springField.png; sourceTree = "<group>"; };
+		780C9E8A1AA54ACE00455668 /* vortex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vortex.png; sourceTree = "<group>"; };
+		780C9E971AA5516F00455668 /* BoosterParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BoosterParticle.sks; sourceTree = "<group>"; };
+		780C9E981AA5516F00455668 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		780C9E9B1AA5529400455668 /* moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moon.png; sourceTree = "<group>"; };
+		782B3A2C1AA62E170093ACA6 /* MyScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyScene.sks; sourceTree = "<group>"; };
 		7830A2EF1AA50BDA00175166 /* DemoSceneEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoSceneEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7830A2F31AA50BDA00175166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7830A2F41AA50BDA00175166 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +84,18 @@
 		7830A3081AA50BDB00175166 /* DemoSceneEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoSceneEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7830A30D1AA50BDB00175166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7830A30E1AA50BDB00175166 /* DemoSceneEditorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSceneEditorTests.swift; sourceTree = "<group>"; };
+		7830A31E1AA51C1800175166 /* Fields.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Fields.sks; sourceTree = "<group>"; };
+		7830A3201AA51C4800175166 /* Fields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fields.swift; sourceTree = "<group>"; };
+		7830A3261AA5206900175166 /* FieldsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldsViewController.swift; sourceTree = "<group>"; };
+		7853014D1AA55D3A00902685 /* SpaceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceTest.swift; sourceTree = "<group>"; };
+		7853014F1AA55D7D00902685 /* SpaceTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceTestViewController.swift; sourceTree = "<group>"; };
+		785301511AA55DC200902685 /* SpaceTest.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SpaceTest.sks; sourceTree = "<group>"; };
+		78789DF21AA6857C00D3A90D /* fdsafd.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = fdsafd.sks; sourceTree = "<group>"; };
+		78789DF41AA689DC00D3A90D /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
+		7879B2EA1AA56B9F007EB5CD /* forceFieldsButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forceFieldsButton.png; sourceTree = "<group>"; };
+		7879B2EB1AA56B9F007EB5CD /* gravityFieldsButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gravityFieldsButton.png; sourceTree = "<group>"; };
+		7879B2EC1AA56B9F007EB5CD /* moonBounceButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moonBounceButton.png; sourceTree = "<group>"; };
+		78DE29CD1AA65462000822C3 /* collection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = collection.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +116,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		780C9E7E1AA54ACE00455668 /* SceneEditorImages */ = {
+			isa = PBXGroup;
+			children = (
+				78DE29CD1AA65462000822C3 /* collection.png */,
+				7879B2EA1AA56B9F007EB5CD /* forceFieldsButton.png */,
+				7879B2EB1AA56B9F007EB5CD /* gravityFieldsButton.png */,
+				7879B2EC1AA56B9F007EB5CD /* moonBounceButton.png */,
+				780C9E9B1AA5529400455668 /* moon.png */,
+				780C9E7F1AA54ACE00455668 /* arrow.png */,
+				780C9E801AA54ACE00455668 /* astronaut.png */,
+				780C9E811AA54ACE00455668 /* astronaut1.png */,
+				780C9E821AA54ACE00455668 /* background.jpg */,
+				780C9E831AA54ACE00455668 /* linearField.png */,
+				780C9E841AA54ACE00455668 /* minus.png */,
+				780C9E851AA54ACE00455668 /* planet.png */,
+				780C9E861AA54ACE00455668 /* plus.png */,
+				780C9E871AA54ACE00455668 /* radialField.png */,
+				780C9E881AA54ACE00455668 /* space.jpg */,
+				780C9E891AA54ACE00455668 /* springField.png */,
+				780C9E8A1AA54ACE00455668 /* vortex.png */,
+			);
+			path = SceneEditorImages;
+			sourceTree = "<group>";
+		};
 		7830A2E61AA50BDA00175166 = {
 			isa = PBXGroup;
 			children = (
@@ -81,10 +161,22 @@
 		7830A2F11AA50BDA00175166 /* DemoSceneEditor */ = {
 			isa = PBXGroup;
 			children = (
+				780C9E7E1AA54ACE00455668 /* SceneEditorImages */,
 				7830A2F41AA50BDA00175166 /* AppDelegate.swift */,
+				78789DF21AA6857C00D3A90D /* fdsafd.sks */,
 				7830A2F61AA50BDA00175166 /* GameScene.sks */,
+				782B3A2C1AA62E170093ACA6 /* MyScene.sks */,
+				78789DF41AA689DC00D3A90D /* MyParticle.sks */,
+				7830A31E1AA51C1800175166 /* Fields.sks */,
+				780C9E971AA5516F00455668 /* BoosterParticle.sks */,
+				780C9E981AA5516F00455668 /* spark.png */,
 				7830A2F81AA50BDA00175166 /* GameScene.swift */,
+				7830A3201AA51C4800175166 /* Fields.swift */,
 				7830A2FA1AA50BDA00175166 /* GameViewController.swift */,
+				7830A3261AA5206900175166 /* FieldsViewController.swift */,
+				7853014D1AA55D3A00902685 /* SpaceTest.swift */,
+				785301511AA55DC200902685 /* SpaceTest.sks */,
+				7853014F1AA55D7D00902685 /* SpaceTestViewController.swift */,
 				7830A2FC1AA50BDA00175166 /* Main.storyboard */,
 				7830A2FF1AA50BDB00175166 /* Images.xcassets */,
 				7830A3011AA50BDB00175166 /* LaunchScreen.xib */,
@@ -198,10 +290,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7879B2ED1AA56B9F007EB5CD /* forceFieldsButton.png in Resources */,
+				780C9E8E1AA54ACE00455668 /* background.jpg in Resources */,
+				780C9E901AA54ACE00455668 /* minus.png in Resources */,
 				7830A3031AA50BDB00175166 /* LaunchScreen.xib in Resources */,
+				780C9E961AA54ACE00455668 /* vortex.png in Resources */,
+				780C9E8B1AA54ACE00455668 /* arrow.png in Resources */,
+				7879B2EE1AA56B9F007EB5CD /* gravityFieldsButton.png in Resources */,
+				785301521AA55DC200902685 /* SpaceTest.sks in Resources */,
 				7830A3001AA50BDB00175166 /* Images.xcassets in Resources */,
+				780C9E9A1AA5516F00455668 /* spark.png in Resources */,
+				780C9E931AA54ACE00455668 /* radialField.png in Resources */,
+				78789DF51AA689DC00D3A90D /* MyParticle.sks in Resources */,
+				780C9E8D1AA54ACE00455668 /* astronaut1.png in Resources */,
+				782B3A2D1AA62E170093ACA6 /* MyScene.sks in Resources */,
+				780C9E941AA54ACE00455668 /* space.jpg in Resources */,
+				780C9E921AA54ACE00455668 /* plus.png in Resources */,
+				780C9E951AA54ACE00455668 /* springField.png in Resources */,
+				7830A31F1AA51C1800175166 /* Fields.sks in Resources */,
+				7879B2EF1AA56B9F007EB5CD /* moonBounceButton.png in Resources */,
 				7830A2F71AA50BDA00175166 /* GameScene.sks in Resources */,
+				780C9E8F1AA54ACE00455668 /* linearField.png in Resources */,
+				780C9E991AA5516F00455668 /* BoosterParticle.sks in Resources */,
+				780C9E9C1AA5529400455668 /* moon.png in Resources */,
+				78789DF31AA6857C00D3A90D /* fdsafd.sks in Resources */,
+				780C9E911AA54ACE00455668 /* planet.png in Resources */,
+				78DE29CE1AA65462000822C3 /* collection.png in Resources */,
 				7830A2FE1AA50BDA00175166 /* Main.storyboard in Resources */,
+				780C9E8C1AA54ACE00455668 /* astronaut.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +335,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7853014E1AA55D3A00902685 /* SpaceTest.swift in Sources */,
 				7830A2F91AA50BDA00175166 /* GameScene.swift in Sources */,
 				7830A2FB1AA50BDA00175166 /* GameViewController.swift in Sources */,
+				785301501AA55D7D00902685 /* SpaceTestViewController.swift in Sources */,
+				7830A3271AA5206900175166 /* FieldsViewController.swift in Sources */,
+				7830A3211AA51C4800175166 /* Fields.swift in Sources */,
 				7830A2F51AA50BDA00175166 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +535,7 @@
 				7830A3141AA50BDB00175166 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7830A3151AA50BDB00175166 /* Build configuration list for PBXNativeTarget "DemoSceneEditorTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +544,7 @@
 				7830A3171AA50BDB00175166 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

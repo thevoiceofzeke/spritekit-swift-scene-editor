@@ -8,38 +8,99 @@
 
 import SpriteKit
 
+struct SpriteTypes {
+    static let Protagonist  :   String = "square"
+    static let Inanimate    :   String = "object"
+}
+
+
 class GameScene: SKScene {
+    
+    
+    let fieldMask: UInt32 = 1
+    let categoryMask: UInt32 = 1
+    var forceField: SKFieldNode?
+    
+    
+    var playerSprite: SKSpriteNode?
+    var playerSelected: Bool?
+    
     override func didMoveToView(view: SKView) {
-        /* Setup your scene here */
-        let myLabel = SKLabelNode(fontNamed:"Chalkduster")
-        myLabel.text = "Hello, World!";
-        myLabel.fontSize = 65;
-        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
+        self.physicsBody = SKPhysicsBody(edgeLoopFromRect: self.frame)
+        // Get reference to player sprite (minimal effort, since most of the work is still done 
+        // in the scene editor
+        playerSprite = childNodeWithName("squarepants") as? SKSpriteNode
+
+        playerSelected = false
         
-        self.addChild(myLabel)
+        
+        
+        /////////////////
+        // FORCE FIELD //
+        /////////////////
+        // Enable the scene's radial gravity field
+        forceField = childNodeWithName("forceField") as? SKFieldNode
+        forceField?.enabled = true
+        //forceField?.physicsBody = SKPhysicsBody(circleOfRadius: 100)
+        forceField?.region = SKRegion(radius: 100)
+        
+        
+        
+        generateShapes()
     }
     
+    
+    
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        /* Called when a touch begins */
+        let touch = touches.anyObject() as UITouch
+        let location = touch.locationInNode(self)
         
-        for touch: AnyObject in touches {
-            let location = touch.locationInNode(self)
-            
-            let sprite = SKSpriteNode(imageNamed:"Spaceship")
-            
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            self.addChild(sprite)
+        let touchedNode = nodeAtPoint(location)
+        
+        if touchedNode == playerSprite {
+            playerSelected = true
         }
     }
-   
-    override func update(currentTime: CFTimeInterval) {
-        /* Called before each frame is rendered */
+    
+    override func touchesMoved(touches: NSSet, withEvent event: UIEvent) {
+        let touch = touches.anyObject() as UITouch
+        let location = touch.locationInNode(self)
+        
+        if playerSelected == true {
+            playerSprite?.position = location
+            forceField?.position = location
+        }
+        
+    }
+    
+    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+        playerSelected = false
+    }
+    
+    
+    
+    func random() -> CGFloat {
+        return CGFloat(Float(arc4random_uniform(UInt32(size.width)) + 1))
+    }
+    
+    func generateShapes() {
+        for count in 1 ... 100 {
+            let shape = SKShapeNode(rectOfSize: CGSizeMake(30, 30))
+            shape.strokeColor = UIColor.whiteColor()
+            shape.lineWidth = 5.0
+            shape.position = CGPointMake(random(), size.height - 10)
+            
+
+            addChild(shape)
+            
+            shape.physicsBody = SKPhysicsBody(rectangleOfSize: shape.frame.size)
+            shape.physicsBody?.fieldBitMask = fieldMask
+            shape.physicsBody?.mass = 0.9
+            shape.physicsBody?.affectedByGravity = true
+        }
+    }
+    
+    override func update(currentTime: NSTimeInterval) {
+        
     }
 }
